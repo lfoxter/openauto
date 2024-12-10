@@ -33,7 +33,7 @@ RtAudioOutput::RtAudioOutput(uint32_t channelCount, uint32_t sampleSize, uint32_
 {
     std::vector<RtAudio::Api> apis;
     RtAudio::getCompiledApi(apis);
-    dac_ = std::find(apis.begin(), apis.end(), RtAudio::LINUX_PULSE) == apis.end() ? std::make_unique<RtAudio>() : std::make_unique<RtAudio>(RtAudio::LINUX_PULSE);
+    dac_ = std::find(apis.begin(), apis.end(), RtAudio::LINUX_ALSA) == apis.end() ? std::make_unique<RtAudio>() : std::make_unique<RtAudio>(RtAudio::LINUX_ALSA);
 }
 
 bool RtAudioOutput::open()
