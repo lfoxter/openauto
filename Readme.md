@@ -1,6 +1,6 @@
 
 # OpenAuto RtAudio fix
-###Forked from the official repo with only one change done as per:
+Forked from the official repo with only one change done as per:
 https://github.com/openDsh/dash/issues/179
 I just needed to upload it to make it public so I can replace the "openautoRepo" reference in install.sh with mine here. 
 
